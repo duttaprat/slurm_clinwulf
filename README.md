@@ -28,7 +28,16 @@ This GitHub repository contains two Bash scripts:
 
 ---
 
-1. Download the folder and keep in clinwulf
+## 🚀 Quickstart Guide
+
+### 1️⃣ Download and Transfer Scripts to ClinWulf
+
+Clone the repository and move into the `slurm/` folder:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name/slurm
+```
 2. Use the following command
       ```
       cd slurm
