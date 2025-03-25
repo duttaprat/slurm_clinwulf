@@ -35,37 +35,36 @@ This GitHub repository contains two Bash scripts:
 Clone the repository and move into the `slurm/` folder:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name/slurm
+git clone https://github.com/duttaprat/Slurm_Clinwulf.git
+cd Slurm_Clinwulf/slurm
 ```
-2. Use the following command
+2️⃣ Load Slurm and Submit the Job
       ```
-      cd slurm
       module load slurm/slurm/20.02.7
       sbatch jupyter_lab_slurm.sh
       ```
-      This will launch Jupyter Lab on a compute node. The output will be saved in a file like jupyter-notebook-<jobid>.log. This gives you a `<job-id>`
+      This will launch Jupyter Lab on a compute node. The output will be saved in a file like `jupyter-notebook-<jobid>.log`. This gives you a `<job-id>`
    
-4. 🔑 Get SSH Tunnel Command and Token
+3️⃣ 🔑 Get the SSH Tunnel Command and Access Token
    Once the job starts, extract the info using:
    ```
    ./jupytertoken.sh <jobid>
    ```
    This will print:
-   * SSH tunnel command
-   * Token for browser login
+      * SSH tunnel command
+      * Token for browser login
 
 
-5. 🌐 Create SSH Tunnel
+4️⃣ 🌐 Create the SSH Tunnel
       From your local machine, run the command printed by jupytertoken.sh. Example:
       ```
       ssh -N -f -L 8888:compute014:8888 yourusername@login01.uhmc.sbuh.stonybrook.edu
       ```
-      Replace `computeXXX` and `yourusername` with the output from the `jupytertoken.sh` script.
+      Replace `compute014` and `yourusername` with the output from the `jupytertoken.sh` script.
 
 
 
-6. 🧪 Access Jupyter Lab
+5️⃣ 🧪 Access Jupyter Lab
    Open your browser and go to:
    ```
    http://localhost:8888
@@ -83,3 +82,6 @@ Let me know if you'd like to add:
 - A section on launching Jupyter **Notebook** instead of **Lab**
 - Screenshots or troubleshooting tips
 
+
+🙋‍♀️ Contributing / Support
+Feel free to open an issue or discussion for improvements, questions, or troubleshooting help.
