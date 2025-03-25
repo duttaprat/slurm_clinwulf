@@ -9,7 +9,7 @@ This repository provides ready-to-use Slurm job scripts for launching **Jupyter 
 
 ## 📁 Folder Structure
 ```
-slurm/
+jupyter/
       ├── jupyter_lab_slurm.sh     # Slurm script to launch Jupyter Lab
       ├── jupytertoken.sh          # Helper script to extract SSH tunnel info and token
 ```
@@ -35,8 +35,8 @@ This GitHub repository contains two Bash scripts:
 Clone the repository and move into the `slurm/` folder:
 
 ```bash
-git clone https://github.com/duttaprat/Slurm_Clinwulf.git
-cd Slurm_Clinwulf/slurm
+git clone https://github.com/duttaprat/slurm_clinwulf.git
+cd slurm_clinwulf/jupyter
 ```
 2️⃣ Load Slurm and Submit the Job
       ```
