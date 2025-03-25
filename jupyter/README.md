@@ -19,13 +19,16 @@ jupyter/
 
 ## 📦 What’s Included
 
-This GitHub repository contains two Bash scripts:
+This GitHub repository contains three Bash scripts:
 
 1. **`jupyter_lab_slurm.sh`**  
    A Slurm job submission script that requests computing resources and launches a Jupyter Lab server on a compute node.
 
 2. **`jupytertoken.sh`**  
    A helper script that parses the Slurm log file to extract the correct SSH tunneling command and Jupyter access token.
+
+3. **`jupyter_slurm.sh`**  
+   A Slurm job submission script that requests computing resources and launches a Jupyter notebook on a compute node.
 
 ---
 
