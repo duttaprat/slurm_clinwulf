@@ -47,7 +47,7 @@ Covers how to submit standard Python/R jobs using Slurm (coming soon!).
 ## 💡 Coming Soon
 
 - [ ] Support for custom Conda environments in both folders
-- [ ] Slurm templates for R, Python, and Shell
+- [ ] Slurm templates for Python, and Shell
 - [ ] Screenshots and logs for troubleshooting
 - [ ] `sbatch`/`srun` tips and job monitoring tools
 
@@ -73,11 +73,3 @@ MIT License
 
 ---
 
-Let me know if you'd like to add:
-- Support for custom Conda environments
-- A section on launching Jupyter **Notebook** instead of **Lab**
-- Screenshots or troubleshooting tips
-
-
-🙋‍♀️ Contributing / Support
-Feel free to open an issue or discussion for improvements, questions, or troubleshooting help.
