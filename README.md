@@ -5,8 +5,8 @@ This repository contains Slurm job scripts and setup instructions to run **Jupyt
 ---
 
 ## 📁 Folder Structure
-```/slurm/ ├── `jupyter_lab_slurm.sh` # Slurm script to launch Jupyter Lab 
-        ├── `jupytertoken.sh`      # Helper script to extract SSH tunnel info and token ```
+```
 slurm/
 ├── jupyter_lab_slurm.sh     # Slurm script to launch Jupyter Lab
 ├── jupytertoken.sh          # Helper script to extract SSH tunnel info and token
+```
