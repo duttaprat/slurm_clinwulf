@@ -29,10 +29,7 @@ slurm-hpc-jobs/
 
 ```
 
----
 
-
----
 
 ## 📚 Detailed Instructions
 
