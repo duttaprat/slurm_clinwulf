@@ -12,6 +12,7 @@ This repository provides ready-to-use Slurm job scripts for launching **Jupyter 
 jupyter/
       ├── jupyter_lab_slurm.sh     # Slurm script to launch Jupyter Lab
       ├── jupytertoken.sh          # Helper script to extract SSH tunnel info and token
+      ├── jupyter_slurm.sh         # Slurm script to launch Jupyter notebook
 ```
 
 ---
