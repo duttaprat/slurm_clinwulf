@@ -1,10 +1,12 @@
 # 🚀 HPC Job Scripts on ClinWulf Cluster (Slurm)
 
-This repository provides Slurm job script templates to run various workloads on the **ClinWulf HPC cluster** at Stony Brook University, including **Jupyter Lab**, **Jupyter Notebook**, and regular **Python/R/Shell scripts**.
+This repository provides Slurm job script templates to run various workloads on the **ClinWulf HPC cluster** at Stony Brook University — including:
 
+- 🧪 **Jupyter Lab**
+- 📓 **Jupyter Notebook**
+- ⚙️ **Regular Python / R / Shell scripts**
 
-> 🔧 These scripts help you launch Jupyter Lab on a compute/GPU node via Slurm and connect through SSH tunneling using your web browser.
-
+> 🔧 These scripts help you efficiently launch jobs on compute/GPU nodes via Slurm, and support SSH tunneling for interactive environments like Jupyter.
 
 ---
 
@@ -19,7 +21,6 @@ slurm-hpc-jobs/
 │
 ├── scripts/                        # ⚙️  Run standard batch jobs (Python, R, etc.) using Slurm
 │   ├── run_python_script.sh
-│   ├── run_r_script.sh
 │   ├── environment.yaml            # Optional: Shared conda env
 │   └── README.md                   # Mini-readme for script usage
 │
@@ -30,60 +31,41 @@ slurm-hpc-jobs/
 
 ---
 
-## 📦 What’s Included
-
-This GitHub repository contains two Bash scripts:
-
-1. **`jupyter_lab_slurm.sh`**  
-   A Slurm job submission script that requests computing resources and launches a Jupyter Lab server on a compute node.
-
-2. **`jupytertoken.sh`**  
-   A helper script that parses the Slurm log file to extract the correct SSH tunneling command and Jupyter access token.
 
 ---
 
-## 🚀 Quickstart Guide
+## 📚 Detailed Instructions
 
-### 1️⃣ Download and Transfer Scripts to ClinWulf
+📓 **[Jupyter Setup Instructions →](./jupyter/README.md)**  
+Covers how to run Jupyter Lab or Notebook using Slurm and connect via SSH tunneling.
 
-Clone the repository and move into the `slurm/` folder:
+⚙️ **[Batch Script Instructions →](./scripts/README.md)**  
+Covers how to submit standard Python/R jobs using Slurm (coming soon!).
 
-```bash
-git clone https://github.com/duttaprat/Slurm_Clinwulf.git
-cd Slurm_Clinwulf/slurm
-```
-2️⃣ Load Slurm and Submit the Job
-      ```
-      module load slurm/slurm/20.02.7
-      sbatch jupyter_lab_slurm.sh
-      ```
-      This will launch Jupyter Lab on a compute node. The output will be saved in a file like `jupyter-notebook-<jobid>.log`. This gives you a `<job-id>`
-   
-3️⃣ 🔑 Get the SSH Tunnel Command and Access Token
-   Once the job starts, extract the info using:
-   ```
-   ./jupytertoken.sh <jobid>
-   ```
-   This will print:
-      * SSH tunnel command
-      * Token for browser login
+---
 
+## 💡 Coming Soon
 
-4️⃣ 🌐 Create the SSH Tunnel
-      From your local machine, run the command printed by jupytertoken.sh. Example:
-      ```
-      ssh -N -f -L 8888:compute014:8888 yourusername@login01.uhmc.sbuh.stonybrook.edu
-      ```
-      Replace `compute014` and `yourusername` with the output from the `jupytertoken.sh` script.
+- [ ] Support for custom Conda environments in both folders
+- [ ] Slurm templates for R, Python, and Shell
+- [ ] Screenshots and logs for troubleshooting
+- [ ] `sbatch`/`srun` tips and job monitoring tools
 
+---
 
+## 📄 License
 
-5️⃣ 🧪 Access Jupyter Lab
-   Open your browser and go to:
-   ```
-   http://localhost:8888
-   ```
-   Paste the token when prompted.
+MIT License
+
+---
+
+## 🙋‍♀️ Contributing / Support
+
+Feel free to open an issue or discussion for:
+- Script improvements
+- Feature requests
+- Help with job setup or Slurm errors
+
 
    
 📄 License
