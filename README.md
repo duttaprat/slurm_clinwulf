@@ -12,7 +12,7 @@ This repository provides Slurm job script templates to run various workloads on 
 
 ## 📁 Folder Structure
 ```
-slurm-hpc-jobs/
+slurm_clinwulf/
 ├── jupyter/                        # 🔗 Launch Jupyter Lab or Notebook interactively on compute nodes
 │   ├── jupyter_lab_slurm.sh
 │   ├── jupyter_notebook_slurm.sh  # (optional)
