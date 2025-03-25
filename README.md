@@ -35,10 +35,10 @@ slurm-hpc-jobs/
 
 ## 📚 Detailed Instructions
 
-📓 **[Jupyter Setup Instructions →](https://github.com/duttaprat/slurm_clinwulf/blob/main/jupyter/README.md)**  
+📓 **[Jupyter Setup Instructions →](jupyter/README.md)**  
 Covers how to run Jupyter Lab or Notebook using Slurm and connect via SSH tunneling.
 
-⚙️ **[Batch Script Instructions →](https://github.com/duttaprat/slurm_clinwulf/blob/main/scripts/README.md)**  
+⚙️ **[Batch Script Instructions →](scripts/README.md)**  
 Covers how to submit standard Python/R jobs using Slurm (coming soon!).
 
 
