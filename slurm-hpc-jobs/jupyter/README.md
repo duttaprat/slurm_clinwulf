@@ -1,7 +1,6 @@
-# 🚀 HPC Job Scripts on ClinWulf Cluster (Slurm)
+# 🚀 Running Jupyter Lab on ClinWulf Cluster using Slurm
 
-This repository provides Slurm job script templates to run various workloads on the **ClinWulf HPC cluster** at Stony Brook University, including **Jupyter Lab**, **Jupyter Notebook**, and regular **Python/R/Shell scripts**.
-
+This repository provides ready-to-use Slurm job scripts for launching **Jupyter Lab** on the ClinWulf HPC cluster at Stony Brook University.
 
 > 🔧 These scripts help you launch Jupyter Lab on a compute/GPU node via Slurm and connect through SSH tunneling using your web browser.
 
@@ -10,22 +9,9 @@ This repository provides Slurm job script templates to run various workloads on 
 
 ## 📁 Folder Structure
 ```
-slurm-hpc-jobs/
-├── jupyter/                        # 🔗 Launch Jupyter Lab or Notebook interactively on compute nodes
-│   ├── jupyter_lab_slurm.sh
-│   ├── jupyter_notebook_slurm.sh  # (optional)
-│   ├── jupytertoken.sh
-│   └── [README.md](./jupyter/README.md)                   # Mini-readme for Jupyter
-│
-├── scripts/                        # ⚙️  Run standard batch jobs (Python, R, etc.) using Slurm
-│   ├── run_python_script.sh
-│   ├── run_r_script.sh
-│   ├── environment.yaml            # Optional: Shared conda env
-│   └── README.md                   # Mini-readme for script usage
-│
-├── LICENSE
-└── README.md                       # Main README (overview + links to folders)
-
+slurm/
+      ├── jupyter_lab_slurm.sh     # Slurm script to launch Jupyter Lab
+      ├── jupytertoken.sh          # Helper script to extract SSH tunnel info and token
 ```
 
 ---
