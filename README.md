@@ -31,7 +31,6 @@ slurm_clinwulf/
 
 ---
 
-## 📚 Detailed Instructions
 
 ## 📚 Detailed Instructions
 
