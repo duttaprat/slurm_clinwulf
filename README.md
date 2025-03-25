@@ -4,7 +4,7 @@ This repository provides Slurm job script templates to run various workloads on 
 
 - 🧪 **Jupyter Lab**
 - 📓 **Jupyter Notebook**
-- ⚙️ **Regular Python / R / Shell scripts**
+- ⚙️ **Regular Python / Shell scripts**
 
 > 🔧 These scripts help you efficiently launch jobs on compute/GPU nodes via Slurm, and support SSH tunneling for interactive environments like Jupyter.
 
@@ -17,7 +17,7 @@ slurm-hpc-jobs/
 │   ├── jupyter_lab_slurm.sh
 │   ├── jupyter_notebook_slurm.sh  # (optional)
 │   ├── jupytertoken.sh
-│   └── [README.md](./jupyter/README.md)                   # Mini-readme for Jupyter
+│   └── README.md                   # Mini-readme for Jupyter
 │
 ├── scripts/                        # ⚙️  Run standard batch jobs (Python, R, etc.) using Slurm
 │   ├── run_python_script.sh
