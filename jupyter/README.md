@@ -21,11 +21,11 @@ jupyter/
 
 This GitHub repository contains three Bash scripts:
 
-1. **`jupyter_lab_slurm.sh`**  
-   A Slurm job submission script that requests computing resources and launches a Jupyter Lab server on a compute node.
+1. **`jupyter_lab_slurm_arg.sh`**  
+   A Slurm job script that takes an optional port number, memory and partition as arguments and launches a Jupyter Lab server on a compute node.
 
-2. **`jupytertoken.sh`**  
-   A helper script that parses the Slurm log file to extract the correct SSH tunneling command and Jupyter access token.
+2. **`jupytertoken_arg.sh`**  
+   A helper script that parses the Slurm log file to extract the correct SSH tunneling command and Jupyter access token. If you have password enabled, it will also inform you. 
 
 3. **`jupyter_slurm.sh`**  
    A Slurm job submission script that requests computing resources and launches a Jupyter notebook on a compute node.
@@ -43,15 +43,15 @@ git clone https://github.com/duttaprat/slurm_clinwulf.git
 cd slurm_clinwulf/jupyter
 ```
 2️⃣ Load Slurm and Submit the Job
-      ```
+      ```bash
       module load slurm/slurm/20.02.7
-      sbatch jupyter_lab_slurm.sh
+      sbatch --mem=150G --time=1:00:00 --partition=short jupyter_lab_slurm_arg.sh 9858
       ```
-      This will launch Jupyter Lab on a compute node. The output will be saved in a file like `jupyter-notebook-<jobid>.log`. This gives you a `<job-id>`
+      This will launch Jupyter Lab on a compute node. The output will be saved in a file like `jupyterlab-<jobid>.log`. This gives you a `<job-id>`
    
 3️⃣ 🔑 Get the SSH Tunnel Command and Access Token
    Once the job starts, extract the info using:
-   ```
+   ```bash
    ./jupytertoken.sh <jobid>
    ```
    This will print:
