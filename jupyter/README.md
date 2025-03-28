@@ -65,7 +65,7 @@ This will print:
 4️⃣ 🌐 Create the SSH Tunnel
 **From your local machine** (_please remember to open a new terminal on your local machine_), run the command printed by `jupytertoken_arg.sh`. Example:
 ```bash
-ssh -N -f -L 8888:compute014:8888 yourusername@login01.uhmc.sbuh.stonybrook.edu
+ssh -N -f -L 8888:compute014:9858 yourusername@login01.uhmc.sbuh.stonybrook.edu
 ```
 Replace `compute014` and `yourusername` with the output from the `jupytertoken.sh` script.
 
