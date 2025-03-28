@@ -35,7 +35,10 @@ This GitHub repository contains three Bash scripts:
 ## 🚀 Quickstart Guide
 
 ### 1️⃣ Download and Transfer Scripts to ClinWulf
-
+Login the Clinwulf server, dont need to use port forwarding:
+```bash
+ssh pdutta@login01.uhmc.sbuh.stonybrook.edu
+```
 Clone the repository and move into the `slurm/` folder:
 
 ```bash
