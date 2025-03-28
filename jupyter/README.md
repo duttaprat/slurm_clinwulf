@@ -1,4 +1,4 @@
-# 🚀 Running Jupyter Lab on ClinWulf Cluster using Slurm
+# 🚀 Running Jupyter Lab on ClinWulf Cluster using Slurm  (Advanced Arg Version)
 
 This repository provides ready-to-use Slurm job scripts for launching **Jupyter Lab** on the ClinWulf HPC cluster at Stony Brook University.
 
@@ -10,8 +10,8 @@ This repository provides ready-to-use Slurm job scripts for launching **Jupyter 
 ## 📁 Folder Structure
 ```
 jupyter/
-      ├── jupyter_lab_slurm.sh     # Slurm script to launch Jupyter Lab
-      ├── jupytertoken.sh          # Helper script to extract SSH tunnel info and token
+      ├── jupyter_lab_slurm_arg.sh   # Slurm script to launch Jupyter Lab (with optional port argument)
+      ├── jupytertoken_arg.sh        # Helper script to extract SSH tunnel info and token
       ├── jupyter_slurm.sh         # Slurm script to launch Jupyter notebook
 ```
 
