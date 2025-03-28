@@ -24,11 +24,14 @@ fi
 cd /home
 
 
-# Source the conda initialization script so that conda activate works.
-source /home/pdutta/anaconda3/etc/profile.d/conda.sh
+# load modules or conda environments here
+module add conda3/23.3.1
 
-# Load modules or activate conda environment if necessary
-conda activate GDC_VCF
+# # Source the conda initialization script so that conda activate works.
+# source /home/pdutta/anaconda3/etc/profile.d/conda.sh
+
+# # Load modules or activate conda environment if necessary
+# conda activate GDC_VCF
 
 # Launch Jupyter Lab without opening a browser
 jupyter lab --no-browser --ip=${node} --port=${port}
