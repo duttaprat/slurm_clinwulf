@@ -73,7 +73,7 @@ cd slurm_clinwulf/jupyter
 
 5️⃣ 🧪 Access Jupyter Lab
    Open your browser and go to:
-   ```
+   ```bash
    http://localhost:8888
    ```
    Paste the token when prompted.
